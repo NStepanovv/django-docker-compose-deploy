@@ -1,7 +1,7 @@
 FROM python:3.9-alpine3.13
-LABEL mainteiner="deco-serv.ru"
+LABEL maintainer="noobfrog581@gmail.com"
 
-ENV PYHONUNBUFFERED 1
+ENV PYTHONUNBUFFERED 1
 
 COPY ./requirements.txt /requirements.txt
 COPY ./app /app
@@ -29,4 +29,4 @@ ENV PATH="/scripts:/py/bin:$PATH"
 
 #USER app
 
-CMD ["run.sh"]
+CMD ["/run.sh"]
